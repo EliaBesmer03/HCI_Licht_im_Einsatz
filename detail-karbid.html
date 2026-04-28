@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Karbidlaterne – Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <nav class="nav-bar">
+            <a href="ar-karbid.html" class="back-btn" aria-label="Zurück">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="detail-icon" style="border-color: var(--warmgelb);">
+                <model-viewer src="modelle/karbidlaterne.glb" auto-rotate rotation-per-second="30deg"
+                    interaction-prompt="none"
+                    style="width: 100%; height: 100%; background: transparent;"></model-viewer>
+            </div>
+            <div>
+                <h1 class="detail-name">Karbidlaterne</h1>
+                <div class="detail-year">ca. 1880</div>
+            </div>
+        </div>
+
+        <div class="detail-divider"></div>
+
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-label">Brennstoff</div>
+                <div class="spec-value">Calciumkarbid + Wasser</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Reichweite</div>
+                <div class="spec-value">5-10 Meter</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Brenndauer</div>
+                <div class="spec-value">4-6 Stunden</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Gewicht</div>
+                <div class="spec-value">800-1200g</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Lichtfarbe</div>
+                <div class="spec-value">Warmgelb (1800K)</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Helligkeit</div>
+                <div class="spec-value">~30–50 Lumen</div>
+            </div>
+        </div>
+
+        <div class="pros-cons-section">
+            <h2 class="pros-cons-title">Vorteile</h2>
+            <div class="pros-cons-card">
+                <ul>
+                    <li><span class="pc-dot pro"></span>Einfache Bauweise</li>
+                    <li><span class="pc-dot pro"></span>Keine Elektronik notwendig</li>
+                    <li><span class="pc-dot pro"></span>Lange Lagerfähigkeit</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pros-cons-section">
+            <h2 class="pros-cons-title">Nachteile</h2>
+            <div class="pros-cons-card">
+                <ul>
+                    <li><span class="pc-dot con"></span>Offene Acetylen-Flamme</li>
+                    <li><span class="pc-dot con"></span>Anfällig für Wind</li>
+                    <li><span class="pc-dot con"></span>Giftiger Karbidabfall nach Betrieb</li>
+                    <li><span class="pc-dot con"></span>Hoher Wartungsaufwand</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="ar-karbid.html" class="bottom-btn btn-accent">
+            Zurück zur AR Ansicht
+        </a>
+    </div>
+</body>
+
+</html>

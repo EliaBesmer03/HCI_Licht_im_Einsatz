@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AR – Karbidlaterne – Licht im Einsatz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="page ar-page">
+        <!-- Top Bar -->
+        <div class="ar-top-bar">
+            <div>
+                <a href="timeline.html" class="back-btn" aria-label="Zurück">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </a>
+            </div>
+            <h1 class="ar-title">AR Ansicht</h1>
+            <div style="width:40px"></div>
+        </div>
+
+        <!-- 3D Viewer -->
+        <div class="ar-viewer-container">
+            <div class="ar-viewer-header">
+                <div class="ar-viewer-titles">
+                    <h2 class="ar-viewer-title">Karbidlaterne</h2>
+                    <p class="ar-viewer-subtitle">ca. 1880</p>
+                </div>
+                <a href="detail-karbid.html" class="ar-info-chip" aria-label="Details">
+                    Details
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+
+            <model-viewer
+                id="karbid-viewer"
+                src="modelle/karbidlaterne.glb"
+                ios-src="modelle/karbidlaterne.usdz"
+                alt="Karbidlaterne 3D-Modell"
+                ar
+                ar-modes="scene-viewer webxr quick-look"
+                ar-scale="auto"
+                camera-controls
+                touch-action="pan-y"
+                auto-rotate
+                shadow-intensity="0.8"
+                environment-image="neutral"
+                exposure="1"
+                scale="0.6 0.6 0.6"
+            >
+                <button slot="ar-button" class="ar-slot-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    In AR ansehen
+                </button>
+            </model-viewer>
+
+
+        </div>
+
+        <!-- Bottom Actions -->
+        <div class="ar-bottom-section">
+            <a href="vergleich.html" class="bottom-btn btn-accent">
+                Zum Leistungsvergleich
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Handlampe – Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <nav class="nav-bar">
+            <a href="ar-handlampe.html" class="back-btn" aria-label="Zurück">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="detail-icon" style="border-color: var(--green);">
+                <model-viewer src="modelle/moderne-lampe.glb" auto-rotate rotation-per-second="30deg"
+                    interaction-prompt="none"
+                    style="width: 100%; height: 100%; background: transparent;"></model-viewer>
+            </div>
+            <div>
+                <h1 class="detail-name">Handlampe</h1>
+                <div class="detail-year">ca. 2000</div>
+            </div>
+        </div>
+
+        <div class="detail-divider"></div>
+
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-label">Brennstoff</div>
+                <div class="spec-value">NiCd-Akku</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Reichweite</div>
+                <div class="spec-value">20–40 Meter</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Brenndauer</div>
+                <div class="spec-value">8–12 Stunden</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Gewicht</div>
+                <div class="spec-value">ca. 600–900 g</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Lichtfarbe</div>
+                <div class="spec-value">Neutralweiss (~4000 K)</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Helligkeit</div>
+                <div class="spec-value">~150–200 Lumen</div>
+            </div>
+        </div>
+
+        <div class="pros-cons-section">
+            <h2 class="pros-cons-title">Vorteile</h2>
+            <div class="pros-cons-card">
+                <ul>
+                    <li><span class="pc-dot pro"></span>Deutlich leichter als Vorgänger</li>
+                    <li><span class="pc-dot pro"></span>Höhere Helligkeit und bessere Reichweite</li>
+                    <li><span class="pc-dot pro"></span>Schnell austauschbarer Akku</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pros-cons-section">
+            <h2 class="pros-cons-title">Nachteile</h2>
+            <div class="pros-cons-card">
+                <ul>
+                    <li><span class="pc-dot con"></span>NiCd-Akku umweltschädlich</li>
+                    <li><span class="pc-dot con"></span>Memory-Effekt beim Laden</li>
+                    <li><span class="pc-dot con"></span>Noch keine LED-Effizienz</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="ar-handlampe.html" class="bottom-btn btn-accent">
+            Zurück zur AR Ansicht
+        </a>
+    </div>
+</body>
+
+</html>

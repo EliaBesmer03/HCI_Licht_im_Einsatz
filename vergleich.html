@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Leistungsvergleich – Licht im Einsatz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <nav class="nav-bar">
+            <a href="timeline.html" class="back-btn" aria-label="Zurück">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </a>
+        </nav>
+
+        <header class="page-header" style="margin-bottom:16px;">
+            <h1 class="page-title">Leistungsvergleich</h1>
+            <p class="page-subtitle">Historische vs. moderne Beleuchtung</p>
+        </header>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar" id="tab-bar">
+            <button class="tab-btn active" data-tab="statistik" onclick="switchTab('statistik')">Statistik</button>
+            <button class="tab-btn" data-tab="performance" onclick="switchTab('performance')">Performance</button>
+            <button class="tab-btn" data-tab="historie" onclick="switchTab('historie')">Historie</button>
+        </div>
+
+        <!-- Statistik Tab -->
+        <div class="tab-content active" id="tab-statistik">
+            <div class="comparison-cards">
+                <div class="comparison-card">
+                    <div class="comp-header">
+                        <div class="comp-title">Reichweite</div>
+                        <div class="comp-percent positive">+1400%</div>
+                    </div>
+                    <div class="comp-values">
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Historisch</div>
+                            <div class="comp-value-data">5-10m</div>
+                        </div>
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Modern</div>
+                            <div class="comp-value-data">100-150m</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comp-header">
+                        <div class="comp-title">Helligkeit</div>
+                        <div class="comp-percent positive">+4900%</div>
+                    </div>
+                    <div class="comp-values">
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Historisch</div>
+                            <div class="comp-value-data">~20 Lumen</div>
+                        </div>
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Modern</div>
+                            <div class="comp-value-data">~1000 Lumen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comp-header">
+                        <div class="comp-title">Brenndauer</div>
+                        <div class="comp-percent positive">+400%</div>
+                    </div>
+                    <div class="comp-values">
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Historisch</div>
+                            <div class="comp-value-data">4-6h</div>
+                        </div>
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Modern</div>
+                            <div class="comp-value-data">20-30h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comp-header">
+                        <div class="comp-title">Gewicht</div>
+                        <div class="comp-percent negative">-60%</div>
+                    </div>
+                    <div class="comp-values">
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Historisch</div>
+                            <div class="comp-value-data">800-1200g</div>
+                        </div>
+                        <div class="comp-value-item">
+                            <div class="comp-value-label">Modern</div>
+                            <div class="comp-value-data">300-500g</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Tab -->
+        <div class="tab-content" id="tab-performance">
+            <div class="perf-chart-area">
+                <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:20px;">Helligkeit (Lumen)</h3>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Karbidlaterne (1880)</span><span>~40 Lm</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-warmgelb" style="width:4%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Handlampe expl. (1965)</span><span>~80 Lm</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-blue" style="width:8%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Handlampe (2000)</span><span>~175 Lm</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-green" style="width:17.5%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Moderne LED (heute)</span><span>~1000 Lm</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-green" style="width:100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perf-chart-area">
+                <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:20px;">Reichweite (Meter)</h3>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Karbidlaterne</span><span>5-10m</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-warmgelb" style="width:7%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Handlampe expl.</span><span>15-25m</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-blue" style="width:17%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Handlampe</span><span>20-40m</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-green" style="width:27%"></div>
+                    </div>
+                </div>
+                <div class="perf-bar-group">
+                    <div class="perf-bar-label"><span>Moderne LED</span><span>100-150m</span></div>
+                    <div class="perf-bar-track">
+                        <div class="perf-bar-fill fill-green" style="width:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historie Tab -->
+        <div class="tab-content" id="tab-historie">
+            <div class="history-timeline">
+                <div class="history-item">
+                    <div class="history-marker">
+                        <div class="history-dot" style="background:var(--warmgelb)"></div>
+                        <div class="history-connector"></div>
+                    </div>
+                    <div class="history-content">
+                        <div class="history-year" style="color:var(--warmgelb)">ca. 1880</div>
+                        <div class="history-name">Karbidlaterne</div>
+                        <div class="history-desc">Erste chemische Lichtquelle für die Feuerwehr. Calciumkarbid erzeugt
+                            mit Wasser brennbares Acetylengas. Revolutionär hell für die damalige Zeit, aber mit offener
+                            Flamme gefährlich.</div>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-marker">
+                        <div class="history-dot" style="background:var(--blue)"></div>
+                        <div class="history-connector"></div>
+                    </div>
+                    <div class="history-content">
+                        <div class="history-year" style="color:var(--blue)">ca. 1965</div>
+                        <div class="history-name">Handlampe explosionsgeschützt</div>
+                        <div class="history-desc">Erster Einsatz elektrischer Beleuchtung mit Explosionsschutz. Durch
+                            den Bleiakku schwer, aber erstmals sicher in gasbelasteten Umgebungen einsetzbar.</div>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-marker">
+                        <div class="history-dot" style="background:var(--green)"></div>
+                        <div class="history-connector" style="background:transparent"></div>
+                    </div>
+                    <div class="history-content">
+                        <div class="history-year" style="color:var(--green)">ca. 2000</div>
+                        <div class="history-name">Handlampe (NiCd)</div>
+                        <div class="history-desc">Modernere Akkutechnologie ermöglicht deutlich geringeres Gewicht bei
+                            höherer Leistung. Noch vor der LED-Revolution, aber ein grosser Fortschritt in Effizienz und
+                            Handhabung.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Button -->
+        <div style="margin-top:auto; padding-top:24px;">
+            <a href="index.html" class="bottom-btn btn-white">
+                Zurück zum Start
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Update buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tabId);
+            });
+            // Update content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.toggle('active', content.id === 'tab-' + tabId);
+            });
+            // Re-trigger animations for cards
+            const active = document.querySelector('.tab-content.active');
+            if (active) {
+                const cards = active.querySelectorAll('.comparison-card, .history-item');
+                cards.forEach(card => {
+                    card.style.animation = 'none';
+                    card.offsetHeight; // trigger reflow
+                    card.style.animation = '';
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

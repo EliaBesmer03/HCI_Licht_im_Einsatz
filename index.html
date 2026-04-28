@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Erleben Sie die Evolution der Feuerwehrbeleuchtung in Augmented Reality – von der Karbidlaterne bis zur modernen Handlampe.">
+    <title>Licht im Einsatz – AR Feuerwehrbeleuchtung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    <div id="welcome-page" class="page">
+        <div class="welcome-content">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="app-icon" id="app-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C12 2 7 7.5 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 7.5 12 2 12 2Z" fill="white" opacity="0.9"/>
+                        <path d="M12 17C10.34 17 9 15.66 9 14C9 12 12 8 12 8C12 8 15 12 15 14C15 15.66 13.66 17 12 17Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="glow-ring"></div>
+                
+                <h1 class="hero-title">Licht im Einsatz</h1>
+                <h2 class="hero-subtitle">AR Feuerwehrbeleuchtung</h2>
+                <p class="hero-description">Erleben Sie die Evolution der Feuerwehrbeleuchtung in Augmented Reality</p>
+            </div>
+
+            <!-- Spacer -->
+            <div class="welcome-spacer"></div>
+
+            <!-- Content Section -->
+            <div class="content-section">
+                <h3 class="section-label">Inhalt</h3>
+                <div class="feature-card">
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-dot"></span>
+                            Interaktive AR-Visualisierung
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            3 historische Leuchtgeräte
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            Leistungsvergleich in Echtzeit
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="timeline.html" class="cta-button" id="cta-button">
+                Lampe auswählen
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Particle background -->
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/welcome.js"></script>
+</body>
+</html>

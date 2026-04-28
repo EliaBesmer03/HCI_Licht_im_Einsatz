@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Wähle ein historisches Leuchtgerät und erlebe es in Augmented Reality.">
+    <title>Lampe auswählen – Licht im Einsatz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Nav -->
+        <nav class="nav-bar">
+            <a href="index.html" class="back-btn" aria-label="Zurück">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </a>
+        </nav>
+
+        <!-- Header -->
+        <header class="page-header">
+            <h1 class="page-title">Wähle deine Lampe</h1>
+            <p class="page-subtitle">Welches Leuchtgerät möchtest du in AR erleben? Wähle aus den historischen Modellen.</p>
+        </header>
+
+        <!-- Timeline Cards -->
+        <div class="timeline-container" id="timeline">
+            <!-- Karbidlaterne 1880 -->
+            <div class="timeline-item slide-up" style="animation-delay:0.1s">
+                <div class="timeline-line line-warmgelb"></div>
+                <div class="timeline-card" onclick="location.href='ar-karbid.html'">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-year year-warmgelb">1880</div>
+                            <h2 class="card-title">Karbidlaterne</h2>
+                        </div>
+                        <a href="ar-karbid.html" class="ar-badge">
+                            In AR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </a>
+                    </div>
+                    <p class="card-description">Acetylengas-Laterne. Deutlich heller als Petroleum, aber anfällig für Wind und Brandgefahr.</p>
+                    <div class="card-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Reichweite</div>
+                            <div class="spec-value">5-10m</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Brenndauer</div>
+                            <div class="spec-value">4-6h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Lichtfarbe</div>
+                            <div class="spec-value">Warmgelb</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handlampe explosionsgeschützt 1965 -->
+            <div class="timeline-item slide-up" style="animation-delay:0.25s">
+                <div class="timeline-line line-blue"></div>
+                <div class="timeline-card" onclick="location.href='ar-explosion.html'">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-year year-blue">1965</div>
+                            <h2 class="card-title">Handlampe explosionsgeschützt</h2>
+                        </div>
+                        <a href="ar-explosion.html" class="ar-badge">
+                            In AR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </a>
+                    </div>
+                    <p class="card-description">Elektrische Lampe mit Explosionsschutz sicher auch in Gasbereichen und brennbaren Atmosphären.</p>
+                    <div class="card-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Reichweite</div>
+                            <div class="spec-value">15–25m</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Brenndauer</div>
+                            <div class="spec-value">8-10h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Lichtfarbe</div>
+                            <div class="spec-value">Neutralweiß</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handlampe 2000 -->
+            <div class="timeline-item slide-up" style="animation-delay:0.4s">
+                <div class="timeline-line line-green"></div>
+                <div class="timeline-card" onclick="location.href='ar-handlampe.html'">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-year year-green">2000</div>
+                            <h2 class="card-title">Handlampe</h2>
+                        </div>
+                        <a href="ar-handlampe.html" class="ar-badge">
+                            In AR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </a>
+                    </div>
+                    <p class="card-description">Moderne NiCd-Akku-Handlampe mit deutlich höherer Helligkeit und Reichweite als alle Vorgänger.</p>
+                    <div class="card-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Reichweite</div>
+                            <div class="spec-value">20–40m</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Brenndauer</div>
+                            <div class="spec-value">8-12h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Lichtfarbe</div>
+                            <div class="spec-value">Neutralweiß</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
